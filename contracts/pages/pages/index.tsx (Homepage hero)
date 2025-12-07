@@ -1,0 +1,20 @@
+import Link from 'next/link'
+
+export default function Home() {
+  return (
+    <main style={{minHeight:'100vh',display:'flex',alignItems:'center',justifyContent:'center',background:'#140d2a',color:'#fff',fontFamily:'Inter,system-ui'}}>
+      <section style={{maxWidth:980, padding:48}}>
+        <h1 style={{fontSize:44, lineHeight:1.05, margin:0}}>
+          SwanCloud is a wallet-native delivery network for builders everywhere.
+        </h1>
+        <p style={{color:'#c7bff0',marginTop:18}}>
+          Chain-agnostic by design and powered by Monad’s high-performance architecture, SwanCloud delivers global, verifiable content at unmatched speed.
+        </p>
+        <div style={{marginTop:28,display:'flex',gap:12}}>
+          <Link href="/dashboard"><a style={{background:'#7C4DFF',color:'#fff',padding:'12px 20px',borderRadius:10,textDecoration:'none'}}>Launch dashboard</a></Link>
+          <Link href="/docs"><a style={{border:'1px solid rgba(255,255,255,0.12)',color:'#fff',padding:'12px 20px',borderRadius:10,textDecoration:'none'}}>Read Docs</a></Link>
+        </div>
+      </section>
+    </main>
+  )
+}
