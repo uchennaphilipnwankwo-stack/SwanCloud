@@ -1,0 +1,8 @@
+export default function Dashboard(){
+  return (
+    <div style={{padding:24}}>
+      <h2>Dashboard (coming soon)</h2>
+      <p>Connect wallet • View node status • Billing & analytics</p>
+    </div>
+  )
+}
